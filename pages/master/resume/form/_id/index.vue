@@ -9,7 +9,7 @@
       >
         <template #header>
           <div class="">
-            <h6 class="mb-0">Master > Resume > Edit</h6>
+            <h6 class="mb-0">Master > Resume > View</h6>
           </div>
         </template>
 

@@ -15,26 +15,19 @@ export default ($axios) => ({
     }
     return $axios.$get(`Test/GetByCode?${string}`)
   },
-  Create(queries) {
+  Create(queries, username) {
     let string = ''
     if (queries) {
       string = querystring.stringify(queries)
     }
-    return $axios.$post(`Test/Create`, queries)
+    return $axios.$post(`Test/Create?username=${username}`, queries)
   },
-  Update(queries) {
+  Update(queries, username) {
     let string = ''
     if (queries) {
       string = querystring.stringify(queries)
     }
-    return $axios.$put(`Test/Update`, queries)
-  },
-  UpdateIsActive(queries) {
-    let string = ''
-    if (queries) {
-      string = querystring.stringify(queries)
-    }
-    return $axios.$put(`Test/UpdateIsActive`, queries)
+    return $axios.$put(`Test/Update?username=${username}`, queries)
   },
   Delete(queries) {
     let string = ''
@@ -43,10 +36,4 @@ export default ($axios) => ({
     }
     return $axios.$delete(`Test/Delete?${string}`)
   },
-  // ExportData() {
-  //   return $axios.$get(`Test/Export`)
-  // },
-  // Exportemplate() {
-  //   return $axios.$get(`Test/exportemplate/`)
-  // },
 })
