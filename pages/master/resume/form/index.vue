@@ -99,16 +99,16 @@ export default {
         name: [
           {
             required: true,
-            pattern: /^[A-Za-zก-๏]+$/,
-            message: 'กรุณากรอก a-z,A-Z,ก-ฮ เท่านั้น',
+            pattern: /^[A-Za-z]+$/,
+            message: 'กรุณากรอก a-z,A-Z เท่านั้น',
             trigger: ['blur', 'change'],
           },
         ],
         surname: [
           {
             required: true,
-            pattern: /^[A-Za-zก-๏]+$/,
-            message: 'กรุณากรอก a-z,A-Z,ก-ฮ เท่านั้น',
+            pattern: /^[A-Za-z]+$/,
+            message: 'กรุณากรอก a-z,A-Z เท่านั้น',
             trigger: ['blur', 'change'],
           },
         ],
